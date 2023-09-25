@@ -15,10 +15,14 @@ public class AddressBook {
         }
         return ;
     }
+    public String getName(BuddyInfo aBuddy2) {
+        return aBuddy2.getName();
+    }
     public static void main(String[] args){
         BuddyInfo buddy = new BuddyInfo("Qusai","carleton",613);
         AddressBook addressBook = new AddressBook();
         addressBook.addBuddy(buddy);
+        System.out.println(buddy);
         addressBook.removeBuddy(0);
     }
 }
